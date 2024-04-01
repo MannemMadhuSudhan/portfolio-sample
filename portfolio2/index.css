@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    /* background-color: black; */
+    /* color: white; */
+    background: #082569;
+    padding: 20px; /* Example padding */
+    font-family: "Oswald", sans-serif;
+    
+
+}
+
+
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#head-title {
+    background-image: linear-gradient(to right, 
+        violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 1200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 10s infinite;
+    -webkit-text-fill-color: transparent;
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+    width: fit-content;
+
+
+}
+/* h1{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  width: fit-content;
+  color: #6b157a;
+} */
+
+#sub-head{
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    color: #0f7ed4;
+
+}
+#sub-para{
+    font-size: larger;
+    color: #e3f2fc;
+    text-wrap: wrap;
+}
+#logo {
+    width: 200px;
+    /* background-color: black; */
+    display: inline-block; /* Added */
+    margin-left: 30px;
+
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle; /* Align with the top of the logo */
+    position: relative;
+    left: 600px; /* Adjust as needed */
+    flex-wrap: wrap; /* Wrap items if needed */
+    margin-top: 20px; /* Add margin as needed */
+
+}
+nav li .nav-link{
+text-decoration: none;
+color: #8df0e6;
+font: bolder;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+nav li .nav-link:hover{
+    color: #275ddb;
+
+    }
+    
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between navigation items */
+    padding-bottom: 60px; /* Adjust as needed */
+    font-size: larger;
+    font-style: 'oblique','sans-serif';    
+}
+
+
+header{
+    display: inline-block;
+    vertical-align: middle;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    padding: 0px; 
+    background-color: black; 
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    height: 80px;
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    /* position: inherit; */
+   
+
+    
+}
+
+#model{
+    width: 30%;
+    margin-left: 700px;
+    box-shadow: 0 4px 8px rgba(53, 50, 50, 0.1); 
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 100vh; /* Adjust height as needed */
+    padding: 50px;
+    margin-top: 70px;
+}
+
+
+.item {
+    text-align: left; /* Centers content within the item */
+    margin-top: 200px; 
+
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    /* Your content styles */
+    /* margin-bottom: 900px; */
+    bottom: 400px;
+    position: relative;
+    padding: 30px;
+
+}
+
+
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around text */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as block */
+    font-size: 16px; /* Font size */
+    margin: 10px; /* Add some margin for spacing */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on background color change */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Additional styles for the second button */
+button:nth-child(2) {
+    background-color: #008CBA; /* Blue background */
+}
+
+button:nth-child(2):hover {
+    background-color: #005f6b; /* Darker blue on hover */
+}
+
+/* CSS for Social Media Icons */
+.social-media {
+    position: relative;
+    bottom: 300px;
+    right: -30px;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #fff; /* Background color of the circular layer */
+    margin: 0 10px; /* Adjust spacing between icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-media a:hover i {
+    color: #008CBA; /* Adjust hover color for icons */
+}
+
+
+
+
+
+.about {
+    display: flex;
+    align-items: center; /* Center vertically */
+    font-family: "Oswald", sans-serif;
+    /* background-color: #5c0624; */
+    border-radius: 20px 20px 20px 20px;
+}
+
+#model2 {
+    max-width: 400px; /* Ensure image doesn't exceed container */
+    margin-right: 50px; /* Add some spacing between image and text */
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    border-image: fill;
+
+
+
+}
+
+.about-content {
+    flex: 1; /* Take up remaining space */
+
+    margin: 20px;
+    color: white;
+}
+
+.about-text {
+    font-size: 16px; /* Adjust text size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+    /* Additional styles for the text */
+}
+.service {
+    /* background-color: #224523; */
+    height: auto; /* Set height to auto for variable content */
+    margin: 20px;
+    position: relative;
+}
+
+.service-section {
+    padding-bottom: 100px; /* Move padding from .service-text1 and .service-text here */
+}
+
+.service-text,
+.service-text1 {
+    text-align: center;
+    margin: 0; /* Combine margin-top and margin-bottom into one line */
+    padding: 0;
+    top: 40px;
+    position: relative;
+    color: #fff; /* Add text color */
+    /* margin: 20px; */
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 200px;
+
+
+}
+
+.card {
+    width: calc(50% - 20px);
+    background-color: #f0f0f0;
+    padding: 40px;
+    margin-bottom: 40px;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #e0e0e0;
+}
+
+.card-title {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-description {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.card i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.portfolio {
+    /* background-color: #5c0624; */
+    height: 90vh;
+    /* margin-top: -200px; */
+
+}
+
+
+
+#portfolio-txt1,
+#portfolio-txt2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+.portfolio-content {
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center;  */
+    /* flex: 3fr; */
+    flex-direction: row;
+    width: 100%;
+}
+
+.portfolio-card {
+
+    
+    width: 600px; /* Adjust card width as needed */
+    margin: 10px; /* Add some margin between cards */
+    background-color: #fff; /* Add background color to the card */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide overflow if content is larger than card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+
+
+.portfolio-card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0; /* Position overlay at the bottom */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Initially hide overlay */
+}
+
+.portfolio-card:hover .card-overlay {
+    opacity: 1; /* Show overlay on hover */
+    transition-delay: 0.2s; /* Delay transition to sync with card hover */
+}
+
+.card-title1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.card-description1 {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.card-description1 a{
+    color: white;
+    /* font-size: px; */
+    text-decoration: none;
+}
+/* CSS for Contact Form */
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px; /* Adjust as needed */
+    margin: 190px auto;
+    padding: 20px;
+}
+
+.contact-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-description h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.contact-description p {
+    color: #d3dae6;
+   
+}
+
+.contact-content {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 10px;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content form legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue legend text */
+}
+
+.contact-content form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333; /* Label text color */
+}
+
+.contact-content form input[type="text"],
+.contact-content form input[type="password"],
+.contact-content form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-content form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-content form input[type="submit"] {
+    background-color: #007bff; /* Blue submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-content form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
